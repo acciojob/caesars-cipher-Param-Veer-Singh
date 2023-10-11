@@ -38,7 +38,9 @@ const lookup = {
     for (let index = 0; index < encodedStr.length; index++) {
         if(encodedStr[index] >= 'A' && encodedStr[index] <= 'Z'){
             decodedArr.push(lookup[encodedStr[index]]);
-        }
+        }else{
+			decodedArr.push(encodedStr[index])
+		}
         
     }
     return decodedArr; //return decodedArr
